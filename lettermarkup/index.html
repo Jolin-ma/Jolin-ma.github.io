@@ -10,6 +10,23 @@ Description: A simple HTML letter markup for a university application response -
 <meta name="description" content="INFT1206 Assignment 1 Part 1 – Marked-up university letter">
 <title>Re: Eileen Dover university application</title>
 
+<style>
+  body {
+  font: 1.2em / 1.5 system-ui;
+}
+
+.sender-column {
+  text-align: right;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+}
+</style>
  <address class="sender-column">
     <strong>Dr. Eleanor Gaye</strong>
     Awesome Science faculty<br>
@@ -19,11 +36,10 @@ Description: A simple HTML letter markup for a university application response -
     <strong>Tel:</strong> 123-456-7890<br>
     <strong>Email:</strong>
     <a href="mailto:no_reply@example.com">no_reply@example.com</a>
-  </address>
-
-<p class="letter-date">
+    <p class="letter-date">
     <time datetime="2016-01-20">20 January 2016</time>
   </p>
+  </address>
 
 <address class="recipient">
     <strong>Miss Eileen Dover</strong>
