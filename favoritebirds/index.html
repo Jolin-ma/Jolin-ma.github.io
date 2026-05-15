@@ -1,6 +1,8 @@
 <!doctype html>
+<!-- Declares this is an HTML5 document -->
 <html lang="en">
   <head>
+    <!-- The <head> contains metadata — not visible on the page itself -->
     <meta charset="utf-8">
     <!--
 Name: Jolin Ma
@@ -32,7 +34,7 @@ body {
   margin: 0 auto;
 }
 
-/* || typography */
+
 
 h1,
 h2 {
@@ -62,8 +64,6 @@ li {
   font-size: 1.6rem;
   line-height: 1.5;
 }
-
-/* || header layout */
 
 header {
   margin-bottom: 10px;
@@ -115,7 +115,6 @@ nav a:focus {
   color: red;
 }
 
-/* || main layout */
 
 main {
   display: flex;
@@ -147,14 +146,17 @@ footer {
   </head>
 
   <body>
+     <!-- HEADER
+         Contains the site title (with logo)  -->
     <header>
       <h1>
         Birdwatching
+         <!-- Decorative logo — alt="" because the title text already describes it -->
         <img
           src="https://mdn.github.io/shared-assets/images/examples/learn/birds/dove.png"
           alt="">
       </h1>
-
+      <!-- Primary navigation menu -->
       <nav>
         <ul>
           <li><a href="#">Home</a></li>
@@ -167,6 +169,7 @@ footer {
     </header>
 
     <main>
+       <!-- Welcome article — the primary body content of the page -->
       <article>
         <h2>Welcome</h2>
 
@@ -215,7 +218,7 @@ footer {
         This fake website example is CC0 — any part of this code may be reused
         in any way you wish. Original example written by Chris Mills, 2016.
       </p>
-
+      <!-- Image attribution for the dove icon used in the header -->
       <p>
         <a href="http://game-icons.net/lorc/originals/dove.html">Dove icon</a>
         by Lorc.
