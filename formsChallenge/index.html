@@ -26,56 +26,83 @@
 
     Facilities
 
-    Was the porridge
-    Too hot?
-    Too cold?
-    Just right?
+    <fieldset>
+      <legend>Was the porridge</legend>
+      <label for="porridge-hot">Too hot?</label>
+      <input type="radio" id="porridge-hot" name="porridge" value="hot" checked>
+      <label for="porridge-cold">Too cold?</label>
+      <input type="radio" id="porridge-cold" name="porridge" value="cold">
+      <label for="porridge-right">Just right?</label>
+      <input type="radio" id="porridge-right" name="porridge" value="right">
+    </fieldset>
 
-    Were the beds
-    Too hard?
-    Too soft?
-    Just right?
+    <fieldset>
+      <legend>Were the beds</legend>
+      <label for="beds-hard">Too hard?</label>
+      <input type="radio" id="beds-hard" name="beds" value="hard" checked>
+      <label for="beds-soft">Too soft?</label>
+      <input type="radio" id="beds-soft" name="beds" value="soft">
+      <label for="beds-right">Just right?</label>
+      <input type="radio" id="beds-right" name="beds" value="right">
+    </fieldset>
 
-    Describe the chairs (select all you agree with)
-    Comfy
-    Luxurious
-    Hi-tech
-    Pretty
-    Majestic
+    <fieldset>
+      <legend>Describe the chairs (select all you agree with)</legend>
+      <label for="chairs-comfy">Comfy</label>
+      <input type="checkbox" id="chairs-comfy" name="chairs" value="comfy">
+      <label for="chairs-luxurious">Luxurious</label>
+      <input type="checkbox" id="chairs-luxurious" name="chairs" value="luxurious">
+      <label for="chairs-hi-tech">Hi-tech</label>
+      <input type="checkbox" id="chairs-hi-tech" name="chairs" value="hi-tech">
+      <label for="chairs-pretty">Pretty</label>
+      <input type="checkbox" id="chairs-pretty" name="chairs" value="pretty">
+      <label for="chairs-majestic">Majestic</label>
+      <input type="checkbox" id="chairs-majestic" name="chairs" value="majestic">
+    </fieldset>
 
     --
 
     About your hosts
 
-    Who's your favorite bear?
-    Papa bear
-    Mama bear
-    Junior
-    Dozer
+    <label for="favorite-bear">Who's your favorite bear?</label>
+    <select id="favorite-bear" name="favorite-bear">
+      <option value="papa">Papa bear</option>
+      <option value="mama">Mama bear</option>
+      <option value="junior">Junior</option>
+      <option value="dozer">Dozer</option>
+    </select>
 
-    Which greeting did you prefer?
-    Wave
-    Friendly greeting
-    Growl
-    Claw marks in the door
+    <label for="greeting">Which greeting did you prefer?</label>
+    <select id="greeting" name="greeting">
+      <option value="wave">Wave</option>
+      <option value="friendly">Friendly greeting</option>
+      <option value="growl">Growl</option>
+      <option value="claw-marks">Claw marks in the door</option>
+    </select>
 
     --
 
     Any other feedback?
 
-    Give us your comments
+    <label for="comments">Give us your comments</label>
+    <textarea id="comments" name="comments"></textarea>
 
     --
 
     Your details
 
-    Name
-    Email
-    Phone
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name">
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email">
+
+    <label for="phone">Phone</label>
+    <input type="tel" id="phone" name="phone">
 
     --
 
-    Submit
+    <button type="submit">Submit</button>
 
     --
   </body>
