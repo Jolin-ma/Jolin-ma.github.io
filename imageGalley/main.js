@@ -6,23 +6,25 @@ const overlay = document.querySelector(".overlay");
 
 const baseURL = "https://mdn.github.io/shared-assets/images/examples/learn/gallery/";
 
-const images = [
-  { filename: "pic1.jpg", alt: "Closeup of a human eye" },
-  { filename: "pic2.jpg", alt: "Rock that looks like a wave" },
-  { filename: "pic3.jpg", alt: "Purple and white pansies" },
-  { filename: "pic4.jpg", alt: "Section of wall from a pharaoh's tomb" },
-  { filename: "pic5.jpg", alt: "Large moth on a leaf" },
+const altText = [
+  "Closeup of a human eye",
+  "Rock that looks like a wave",
+  "Purple and white pansies",
+  "Section of wall from a pharaoh's tomb",
+  "Large moth on a leaf",
 ];
+
+const images = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic4.jpg", "pic5.jpg"];
 
 function updateDisplayedImage(src, alt) {
   displayedImage.src = src;
   displayedImage.alt = alt;
 }
 
-for (const image of images) {
+for (let i = 1; i <= images.length; i++) {
   const newImage = document.createElement("img");
-  newImage.src = baseURL + image.filename;
-  newImage.alt = image.alt;
+  newImage.src = baseURL + images[i - 1];
+  newImage.alt = altText[i - 1];
   newImage.tabIndex = 0;
 
   thumbBar.appendChild(newImage);
@@ -33,12 +35,15 @@ for (const image of images) {
 }
 
 btn.addEventListener("click", () => {
-  if (btn.classList.contains("dark")) {
+  const btnClass = btn.getAttribute("class");
+
+  if (btnClass === "dark") {
+    btn.setAttribute("class", "light");
     btn.textContent = "Lighten";
     overlay.style.backgroundColor = "rgb(0 0 0 / 0.5)";
   } else {
+    btn.setAttribute("class", "dark");
     btn.textContent = "Darken";
     overlay.style.backgroundColor = "rgb(0 0 0 / 0)";
   }
-  btn.classList.toggle("dark");
 });
