@@ -206,6 +206,10 @@ audio {
 
 .show-hide {
   cursor: pointer;
+  display: block;
+  font-family: inherit;
+  padding: 0;
+  margin: 0;
 }
 
 .comments h3 {
