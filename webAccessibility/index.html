@@ -7,7 +7,7 @@ site fixed for color contrast, semantic structure, and other a11y issues.
 -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
 
@@ -22,6 +22,8 @@ site fixed for color contrast, semantic structure, and other a11y issues.
   </head>
 
   <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <div class="header">
       <h1>Welcome to our wildlife website</h1>
     </div>
@@ -41,7 +43,7 @@ site fixed for color contrast, semantic structure, and other a11y issues.
       </form>
     </nav>
 
-    <main>
+    <main id="main-content">
       <article>
         <h2>The trouble with Bears</h2>
         <p>By Evan Wild</p>
@@ -132,7 +134,7 @@ site fixed for color contrast, semantic structure, and other a11y issues.
 
             <h3>Comments</h3>
 
-            <ul class="comment-container">
+            <ul class="comment-container" aria-live="polite">
 
               <li>
 
