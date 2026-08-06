@@ -175,6 +175,15 @@ audio {
   width: 500px;
 }
 
+.transcript {
+  width: 500px;
+  margin: 1rem auto 0;
+}
+
+.transcript summary {
+  cursor: pointer;
+}
+
 /* Comments styling */
 
 .comments {
